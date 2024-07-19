@@ -25,3 +25,10 @@ https://app.aluracursos.com/course/html-css-header-footer-variables-css
 https://app.aluracursos.com/course/html-css-trabajando-responsividad-publicacion-proyectos
 
 https://www.aluracursos.com/curso-online-git-github-repositorio-commit-versiones
+
+
+Estamos compartiendo un infográfico detallado que describe paso a paso el proceso para construir el encriptador de texto. Este recurso ha sido diseñado para guiarte a través de cada etapa del desafío, facilitando la comprensión y aplicación de los conceptos de programación que has aprendido. Utiliza el infográfico como una referencia para ayudarte a organizar tus tareas, entender el flujo del proyecto y asegurarte de no omitir ningún paso.
+
+Infografico Encriptador de texto.pdf
+
+¡Esperamos que te sea de gran ayuda en tu camino para completar este desafío!
