@@ -1,0 +1,220 @@
+@import url('reset.css');
+@import url('theme.css');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+textarea, input, h1, p , label, .btn , a{
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3rem 5rem;
+}
+
+.main, footer{
+    padding: 3rem 5rem;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.row__header {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__titulo {
+    text-align: center;
+}
+
+.animationContainer, .animationGitHub, .animationLinkedIn {
+    width: 5rem;
+    height: 5rem;
+}
+
+.animationGitHub, .animationLinkedIn {
+    width: 3rem;
+    height: 3rem;
+}
+
+.theme-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-selector label {
+    margin-right: 1rem;
+}
+
+#theme-select {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--font-krone);
+}
+
+/* Fin Header */
+
+
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 20px; 
+}
+
+/* Manija de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-500);
+    border-radius: 10px;
+}
+
+/* Manija de la barra de desplazamiento al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-200); 
+}
+/* Fin barra de desplazmiento */
+
+
+/* Main contenido */
+.main__contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 2rem; /* Espacio entre los dos textarea */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.textarea__desencriptado,
+.textarea__encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.label{
+    font-family: var(--font-krone);
+    font-size: 1.5rem;
+}
+
+
+textarea {
+    height: 400px; /* Ajusta la altura del textarea según sea necesario */
+    width: 100%; /* Asegura que el textarea ocupe el ancho completo del contenedor */
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    resize: none;
+    outline: none;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn {
+    font-size: 1rem;
+    font-family: var(--font-krone);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: var(--btn-font-color);
+    background-color: var(--btn-color);
+    
+}
+
+.btn-txtarea-desencriptado{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* Main Fin */
+
+
+
+/* footer */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--btn-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--btn-font-color);
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+.footer p {
+    margin: 0;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido del párrafo */
+}
+
+.footer a {
+    color: var(--btn-font-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el ícono dentro del enlace */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem; /* Espacio entre el párrafo y el ícono */
+}
+
+
+/*Fin footer */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteban Garcia Challenge</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="https://unpkg.com/lottie-web@5.7.6/build/player/lottie.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="row__header">
+                <div class="animationContainer" id="animationContainer"></div>
+                <div class="header__titulo">
+                    <h1 class="header__titulo">Challange Encriptador y Desencriptador</h1>
+                </div>
+            </div>
+    
+            <div class="theme-selector">
+                <label for="theme-select">Select Theme:</label>
+                <select id="theme-select">
+                    <option value="darkBlue2">Dark Blue 2 Theme</option>
+                    <option value="darkBlue">Dark Blue Theme</option>
+                    <option value="lightBlue">Light Blue Theme</option>
+                    <option value="gray">Gray Theme</option>
+                    <option value="darkMode">Dark Mode Theme</option>
+                    <option value="default">Default theme</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__contenido">
+            <div class="textarea__desencriptado">
+                <label class="label" for="txt-desencriptado">Ingrese el texto a Encriptar</label>
+                <textarea name="txtarea-desencriptado" id="txtarea-desencriptado"></textarea>
+                <div class="btn-txtarea-desencriptado">
+                    <input class="btn-encriptar" id="btn-encriptar" name="btn-encriptar" type="button" value="Desencriptar">
+                    <input class="btn-desencriptar" id="btn-desencriptar" name="btn-desencriptar" type="button" value="Encriptar">
+                </div>
+            </div>
+            <div class="textarea__encriptado">
+                <label class="label" for="txt-encriptado">Texto encriptado</label>
+                <textarea name="txtarea-encriptado" id="txtarea-encriptado"></textarea>
+                <input class="btn" id="btn-copiar" name="btn-copiar" type="button" value="Copiar">
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Desarrollado por Esteban Garcia</p>
+        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+            <div class="animationLinkedIn" id="animationLinkedIn"></div>
+        </a>
+        <a href="https://github.com/EstebanJGarcia" target="_blank">
+            <div class="animationGitHub" id="animationGitHub"></div>
+        </a>
+    </footer>
+    <script type="module" src="./src/js/app.js"></script>
+</body>
+</html>

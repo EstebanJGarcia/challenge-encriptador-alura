@@ -1,0 +1,50 @@
+/* Guias de colores */
+
+:root {
+    /* Default Theme: Dark Blue */
+    --primary-100: #609ED4;
+    --primary-200: #356EA9;
+    --primary-300: #0A3871;
+    --primary-400: #072B61;
+    --primary-500: #052051;
+    --background-color: var(--primary-300);
+    --text-color: #FFFFFF;
+    --font-krone: "Krona One", sans-serif;
+    --font-Montserrat: "Montserrat", sans-serif;
+    --btn-color: #356EA9;
+    --btn-font-color: '#FFFFFF'
+}
+
+
+/* Light Blue Theme */
+.lightBlue {
+    --primary-100: #F3F5FC;
+    --primary-200: #EFF1FA;
+    --primary-300: #E9ECF8;
+    --primary-400: #AAB2D5;
+    --primary-500: #757FB2;
+    --background-color: var(--primary-100);
+    --text-color: #000000;
+}
+
+/* Gray Theme */
+.gray {
+    --primary-100: #CED4DA;
+    --primary-200: #ADB5BD;
+    --primary-300: #7B838A;
+    --primary-400: #495057;
+    --primary-500: #343A40;
+    --background-color: var(--primary-100);
+    --text-color: #FFFFFF;
+}
+
+/* Dark Mode Theme */
+.darkMode {
+    --primary-100: #1E1E1E;
+    --primary-200: #2C2C2C;
+    --primary-300: #3C3C3C;
+    --primary-400: #4C4C4C;
+    --primary-500: #6C6C6C;
+    --background-color: var(--primary-100);
+    --text-color: #E0E0E0;
+}
