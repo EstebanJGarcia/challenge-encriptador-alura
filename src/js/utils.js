@@ -3,7 +3,7 @@ let animation;
 // Función para cargar la animación
 async function loadAnimation(icono, id) {
     try {
-        const response = await fetch(`./assets/iconos/${icono}`);
+        const response = await fetch(`./src/assets/iconos/${icono}`);
         const animationData = await response.json();
 
         // Carga la animación
