@@ -336,6 +336,7 @@ main {
 
     .theme-selector {
         top: 0.5rem;
+        left: 0.5rem;
         align-items: center;
         justify-content: center;
     }
