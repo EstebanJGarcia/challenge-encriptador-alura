@@ -1,8 +1,16 @@
 import { applyTheme } from './theme.js';
-import { challange } from './function.js';
+import { challange } from './challange.js';
 
-challange.sett_texto("Esteban")
-challange.get_texto()
+
+let texto = 'enterntenterrntenterntenterrrntenterntenterrntenterntenterrrrstenterntenterrntenterntenterrrntenterntenterrntenterntenterrrrbaiimesimesmentersimesmentersmenterntenterrsn joberbenterrbenterntenterrrbenterntenterrntenterntenterrrrsenterntenterrntenterntenterrrntenterntenterrntenterntenterrrr gaiimesimesmentersimesmentersmenterntenterrsrcimesmentersmenterntenterrsmenterntenterrntenterntenterrrsaiimesimesmentersimesmentersmenterntenterrs rimesmentersmenterntenterrsmenterntenterrntenterntenterrrsoberbenterrbenterntenterrrbenterntenterrntenterntenterrrrs'
+let uno = challange.desencriptarv2(texto)
+let dos = challange.desencriptarv2(uno)
+let tres = challange.desencriptarv2(dos)
+let cuatro = challange.desencriptarv2(tres)
+console.log(cuatro)
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const themeSelect = document.getElementById('theme-select');
