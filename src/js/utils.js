@@ -20,6 +20,7 @@ async function loadAnimation(icono, id) {
 
         // Cambia el color inicial
         console.log(id)
+        // Generar y establecer el favicon
         updateAnimationColor('#ffffff',id);
     } catch (error) {
         console.error('Error al cargar el archivo JSON:', error);
@@ -42,6 +43,7 @@ export async function updateAnimationColor(color , animationContainer) {
         });
     }
 }
+
 
 // Cargar la animación cuando se carga el script
 loadAnimation('icon-encriptar.json', 'animationContainer');

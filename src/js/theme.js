@@ -85,7 +85,6 @@ export function applyTheme(themeName) {
         document.documentElement.style.setProperty('--text-color', theme.textColor);
         document.documentElement.style.setProperty('--btn-color', theme.btnColor);
         document.documentElement.style.setProperty('--btn-font-color', theme.btnFont);
-        console.log(theme.primary100 )
         // Actualiza el color de la animación
         updateAnimationColor(theme.animationColor, 'animationContainer');
         if (theme.primary100 =='#000000'){
