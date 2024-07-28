@@ -145,6 +145,7 @@ textarea {
     outline: none;
     background: scroll;
     padding: 5%;
+    z-index: 10;
 }
 
 .btn-encriptar, .btn-desencriptar, .btn {
@@ -223,6 +224,7 @@ textarea {
 }
 
 #svgOso.show {
+    z-index: 20; 
     display: block;
     opacity: 1;
 }
@@ -230,7 +232,7 @@ textarea {
 
 /* Fin oso        */
 
-/* oso dos */
+/* oso advertencia */
 .textarea__desencriptado{
     position: relative;
 }
@@ -239,11 +241,45 @@ textarea {
     bottom: 5rem; 
     width: 5rem;
     height: 5rem; 
-    z-index: 1; 
     pointer-events: none;
     display: none;
+    z-index: 20;
 }
 /* Oso advertencia*/
+
+
+/* Oso texto encontrado */
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: none;
+}
+  
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+.grupo-buscar{
+    position: absolute;
+    font-family: var(--font-Montserrat);
+    font-size: 1rem;
+}
+
+.oso-buscar{
+    position: relative;
+    box-sizing:content-box;
+    height: 50vh;
+}
+.grupo-buscar-p{
+    font-weight: bold;
+    padding: 0.5rem 0rem;
+
+}
+
+/*  Fin oso texto encontrado*/
 
 /* footer */
 
@@ -426,6 +462,12 @@ main {
         bottom: 5rem; 
         width: 4rem;
         height: 4rem; 
+    }
+
+    .oso-buscar{
+        position: relative;
+        box-sizing:content-box;
+        height: 45vh;
     }
 
     textarea {

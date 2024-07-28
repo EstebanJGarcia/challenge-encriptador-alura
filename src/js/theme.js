@@ -69,7 +69,9 @@ export const themes = {
         textColor: "#000000",
         btnColor: '#000000',
         btnFont: '#ffffff',
+        animationColor2: "#7B838A",
         animationColor: "#000000"
+
     }
 };
 
@@ -85,14 +87,17 @@ export function applyTheme(themeName) {
         document.documentElement.style.setProperty('--text-color', theme.textColor);
         document.documentElement.style.setProperty('--btn-color', theme.btnColor);
         document.documentElement.style.setProperty('--btn-font-color', theme.btnFont);
+
+        
         // Actualiza el color de la animación
         updateAnimationColor(theme.animationColor, 'animationContainer');
         if (theme.primary100 =='#000000'){
             updateAnimationColor('#FFFFFF', 'animationGitHub');
-            
+            updateAnimationColor(theme.animationColor2, 'oso-buscar');
         }else{
             updateAnimationColor(theme.animationColor, 'animationGitHub');
             updateAnimationColor(theme.animationColor, 'animationLinkedIN');
+            updateAnimationColor(theme.animationColor, 'oso-buscar');
         }
         
     }

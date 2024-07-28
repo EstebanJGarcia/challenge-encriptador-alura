@@ -14,7 +14,7 @@ async function loadAnimation(icono, id) {
             autoplay: true, // Iniciar la animación automáticamente
             animationData: animationData // El JSON de la animación
         });
-
+        animation.setSpeed(0.5);
         // Espera a que la animación esté completamente cargada
         await new Promise(resolve => animation.addEventListener('DOMLoaded', resolve));
 
@@ -25,28 +25,6 @@ async function loadAnimation(icono, id) {
         console.error('Error al cargar el archivo JSON:', error);
     }
 }
-
-async function loadAnimation2(icono, id) {
-    try {
-        const response = await fetch(`./src/assets/iconos/${icono}`);
-        const animationData = await response.json();
-        // Carga la animación
-        animation = lottie.loadAnimation({
-            container: document.getElementById(`${id}`), // El contenedor en el HTML
-            renderer: 'svg', // El renderizador
-            loop: true, // Hacer que la animación se repita
-            autoplay: true, // Iniciar la animación automáticamente
-            animationData: animationData // El JSON de la animación
-        });
-        // Espera a que la animación esté completamente cargada
-        await new Promise(resolve => animation.addEventListener('DOMLoaded', resolve));
-        // Cambia el color inicial
-        // Generar y establecer el favicon
-    } catch (error) {
-        console.error('Error al cargar el archivo JSON:', error);
-    }
-}
-
 
 // Función para actualizar el color de la animación
 export async function updateAnimationColor(color , animationContainer) {
@@ -65,9 +43,31 @@ export async function updateAnimationColor(color , animationContainer) {
     }
 }
 
+async function loadAnimation2(icono, id) {
+    try {
+        const response = await fetch(`./src/assets/iconos/${icono}`);
+        const animationData = await response.json();
+        // Carga la animación
+        animation = lottie.loadAnimation({
+            container: document.getElementById(`${id}`), // El contenedor en el HTML
+            renderer: 'svg', // El renderizador
+            loop: true, // Hacer que la animación se repita
+            autoplay: true, // Iniciar la animación automáticamente
+            animationData: animationData // El JSON de la animación
+        });
+        
+        // Espera a que la animación esté completamente cargada
+        await new Promise(resolve => animation.addEventListener('DOMLoaded', resolve));
+        // Cambia el color inicial
+        // Generar y establecer el favicon
+    } catch (error) {
+        console.error('Error al cargar el archivo JSON:', error);
+    }
+}
 
 // Cargar la animación cuando se carga el script
 loadAnimation('icon-encriptar.json', 'animationContainer');
 loadAnimation('icons8-github.json','animationGitHub')
 loadAnimation('icons8-linkedin.json', 'animationLinkedIn')
+loadAnimation('oso-caminando.json', 'oso-buscar')
 loadAnimation2('oso.json', 'oso-desencriptado')

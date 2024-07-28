@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 verifica caracteres especiales y acentos*/
 variables.LowerCase()
 
-
+variables.showGrupoBuscar()
 variables.hideAdverencia()
 variables.readOnly() // hacer en solo lectura el text area de  encriptado
 variables.copiar()

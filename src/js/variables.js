@@ -11,6 +11,7 @@ class Variables{
         this.txtareaEncriptado = document.getElementById('txtarea-encriptado')
         this.textoOso = document.getElementById('svgOso')
         this.osoAdvertencia = document.getElementById('oso-desencriptado')
+        this.grupoBuscar = document.getElementById('grupo-buscar')
     }
 
     LowerCase(){
@@ -31,13 +32,19 @@ class Variables{
     copiar(){
         this.btnCopiar.addEventListener('click', ()=>{
             const textoACopiar = this.txtareaEncriptado.value;
-            if (textoACopiar != ''){
+            if (textoACopiar !== '') {
                 this.showOsoTemporary()
+                setTimeout(() => {
+                    this.showGrupoBuscar()
+                }, 1500); 
             }
+
+            this.txtareaEncriptado.value = ''
             navigator.clipboard.writeText(textoACopiar).then(()=>{
             }).catch(error =>{
                 console.log(`Error al copiar el texto: ${error}`);
             })
+           
         })
     }
 
@@ -48,6 +55,7 @@ class Variables{
                 this.showAdverencia()
             }else{
                 if (this.txtareaDesencriptado.value != ''){
+                    this.hideGrupoBuscar()
                     challange.setTexto(this.txtareaDesencriptado.value)
                     this.txtareaEncriptado.value = challange.encriptar()
                     this.btnCopiar.style.display = 'block'
@@ -65,6 +73,7 @@ class Variables{
                 this.showAdverencia()
             }else{
                 if (this.txtareaDesencriptado.value != ''){
+                    this.hideGrupoBuscar()
                     challange.setTexto(this.txtareaDesencriptado.value);
                     let texto = challange.getTexto();
                     this.txtareaEncriptado.value = challange.desencriptarv2(texto);
@@ -72,7 +81,6 @@ class Variables{
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     this.txtareaDesencriptado.value = '';
                     this.hideAdverencia();
-                    
                 }
             }
         })
@@ -131,7 +139,21 @@ class Variables{
         this.showOso();
         setTimeout(() => {
             this.hideOso();
-        }, 1000);
+        }, 800);
+    }
+    // grupo buscar oso
+    showGrupoBuscar() {
+        this.grupoBuscar.classList.remove('hidden');
+        setTimeout(() => {
+            this.grupoBuscar.classList.add('visible');
+        }, 10);
+    }
+
+    hideGrupoBuscar() {
+        this.grupoBuscar.classList.remove('visible');
+        setTimeout(() => {
+            this.grupoBuscar.classList.add('hidden');
+        }, 10); 
     }
 }
 
