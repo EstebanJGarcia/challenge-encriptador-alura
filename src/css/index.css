@@ -222,7 +222,20 @@ textarea {
 
 /* Fin oso        */
 
-
+/* oso dos */
+.textarea__desencriptado{
+    position: relative;
+}
+.oso__desencriptado{
+    position: absolute;
+    bottom: 5rem; 
+    width: 5rem;
+    height: 5rem; 
+    z-index: 1; 
+    pointer-events: none;
+    display: none;
+}
+/* Oso advertencia*/
 
 /* footer */
 
@@ -398,5 +411,12 @@ main {
         position: fixed;
         align-items: center;
         justify-content: center;
+    }
+
+    .oso__desencriptado{
+        position: absolute;
+        bottom: 5rem; 
+        width: 4rem;
+        height: 4rem; 
     }
 }

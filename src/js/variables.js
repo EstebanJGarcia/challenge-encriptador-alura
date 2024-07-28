@@ -10,6 +10,7 @@ class Variables{
         this.adverencia = document.getElementById('txtarea-desencriptado-advertencia')
         this.txtareaEncriptado = document.getElementById('txtarea-encriptado')
         this.textoOso = document.getElementById('svgOso')
+        this.osoAdvertencia = document.getElementById('oso-desencriptado')
     }
 
     LowerCase(){
@@ -50,7 +51,9 @@ class Variables{
                 this.txtareaEncriptado.value = challange.encriptar()
                 this.txtareaDesencriptado.value = ''
                 this.hideAdverencia()
-                this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (this.txtareaDesencriptado.value != ''){
+                    this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         })
     }
@@ -65,16 +68,20 @@ class Variables{
                 this.txtareaEncriptado.value = challange.desencriptarv2(texto)
                 this.txtareaDesencriptado.value = ''
                 this.hideAdverencia()
-                this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (this.txtareaDesencriptado.value != ''){
+                    this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
             }
         })
     }
 
     showAdverencia() {
+        this.osoAdvertencia.style.display = 'block'
         this.adverencia.style.display = 'block'; // Muestra el elemento
     }
 
     hideAdverencia() {
+        this.osoAdvertencia.style.display = 'none'
         this.adverencia.style.display = 'none'; // Oculta el elemento
     }
 
