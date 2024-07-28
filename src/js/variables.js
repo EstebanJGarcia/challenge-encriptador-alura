@@ -68,7 +68,7 @@ class Variables{
                 this.txtareaEncriptado.value = challange.desencriptarv2(texto)
                 this.txtareaDesencriptado.value = ''
                 this.hideAdverencia()
-                this.txtareaEncriptado.scrollIntoView({ behavior: 'smooth' });
+                this.btnCopiar.scrollIntoView({ behavior: 'smooth' });
             }
         })
     }
