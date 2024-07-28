@@ -30,7 +30,6 @@ async function loadAnimation2(icono, id) {
     try {
         const response = await fetch(`./src/assets/iconos/${icono}`);
         const animationData = await response.json();
-
         // Carga la animación
         animation = lottie.loadAnimation({
             container: document.getElementById(`${id}`), // El contenedor en el HTML
@@ -39,7 +38,6 @@ async function loadAnimation2(icono, id) {
             autoplay: true, // Iniciar la animación automáticamente
             animationData: animationData // El JSON de la animación
         });
-
         // Espera a que la animación esté completamente cargada
         await new Promise(resolve => animation.addEventListener('DOMLoaded', resolve));
         // Cambia el color inicial

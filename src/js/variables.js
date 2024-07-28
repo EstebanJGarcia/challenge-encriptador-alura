@@ -49,11 +49,11 @@ class Variables{
             }else{
                 challange.setTexto(this.txtareaDesencriptado.value)
                 this.txtareaEncriptado.value = challange.encriptar()
-                this.txtareaDesencriptado.value = ''
-                this.hideAdverencia()
                 if (this.txtareaDesencriptado.value != ''){
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
+                this.txtareaDesencriptado.value = ''
+                this.hideAdverencia()
             }
         })
     }
@@ -66,11 +66,11 @@ class Variables{
                 challange.setTexto(this.txtareaDesencriptado.value)
                 let texto = challange.getTexto()
                 this.txtareaEncriptado.value = challange.desencriptarv2(texto)
-                this.txtareaDesencriptado.value = ''
-                this.hideAdverencia()
                 if (this.txtareaDesencriptado.value != ''){
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
+                this.txtareaDesencriptado.value = ''
+                this.hideAdverencia()
             }
         })
     }
