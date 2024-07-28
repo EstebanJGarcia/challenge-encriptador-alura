@@ -137,7 +137,7 @@ textarea {
     border: 0.25rem solid var(--btn-color);
     padding: 2rem;
     border-radius: 0.5rem;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-krone);
     font-size: 2rem;
     color: var(--text-color);
     background-color: var(--btn-color);
@@ -166,15 +166,23 @@ textarea {
 
 /* Placeholder del text Area */
 #txtarea-desencriptado::-webkit-input-placeholder{ 
+    font-size: 1rem;
+    font-family: var(--font-Montserrat);
     color: var(--text-color);
 }
 #txtarea-desencriptado::-moz-placeholder{ 
+    font-size: 1rem;
+    font-family: var(--font-Montserrat);
     color: var(--text-color);
 }
 #txtarea-desencriptado:-moz-placeholder {
+    font-size: 1rem;
+    font-family: var(--font-Montserrat);
     color: var(--text-color);
 }
 #txtarea-desencriptado:-ms-input-placeholder {
+    font-size: 1rem;
+    font-family: var(--font-Montserrat);
     color: var(--text-color);
 }
 
