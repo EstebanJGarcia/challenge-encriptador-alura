@@ -10,9 +10,6 @@ class Variables{
         this.adverencia = document.getElementById('txtarea-desencriptado-advertencia')
         this.txtareaEncriptado = document.getElementById('txtarea-encriptado')
         this.textoOso = document.getElementById('svgOso')
-
-         // Ocultar el SVG al iniciar la página
-         this.hideOso()
     }
 
     LowerCase(){
@@ -53,7 +50,7 @@ class Variables{
                 this.txtareaEncriptado.value = challange.encriptar()
                 this.txtareaDesencriptado.value = ''
                 this.hideAdverencia()
-                this.txtareaEncriptado.scrollIntoView({ behavior: 'smooth' });
+                this.btnCopiar.scrollIntoView({ behavior: 'smooth' });
             }
         })
     }
@@ -114,7 +111,7 @@ class Variables{
         this.textoOso.classList.remove('show');
         setTimeout(() => {
             this.textoOso.style.display = 'none';
-        }, 2000); 
+        }, 1000); 
     }
 
     // Método para mostrar el oso temporalmente
@@ -122,7 +119,7 @@ class Variables{
         this.showOso();
         setTimeout(() => {
             this.hideOso();
-        }, 2000);
+        }, 1000);
     }
 }
 
