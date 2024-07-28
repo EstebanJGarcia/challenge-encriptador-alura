@@ -166,16 +166,16 @@ textarea {
 
 /* Placeholder del text Area */
 #txtarea-desencriptado::-webkit-input-placeholder{ 
-    color: var(--btn-font-color);
+    color: var(--text-color);
 }
 #txtarea-desencriptado::-moz-placeholder{ 
-    color: var(--btn-font-color);
+    color: var(--text-color);
 }
 #txtarea-desencriptado:-moz-placeholder {
-    color: var(--btn-font-color);
+    color: var(--text-color);
 }
 #txtarea-desencriptado:-ms-input-placeholder {
-    color: var(--btn-font-color);
+    color: var(--text-color);
 }
 
 
