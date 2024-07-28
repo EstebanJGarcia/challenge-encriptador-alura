@@ -19,7 +19,6 @@ async function loadAnimation(icono, id) {
         await new Promise(resolve => animation.addEventListener('DOMLoaded', resolve));
 
         // Cambia el color inicial
-        console.log(id)
         // Generar y establecer el favicon
         updateAnimationColor('#ffffff',id);
     } catch (error) {
