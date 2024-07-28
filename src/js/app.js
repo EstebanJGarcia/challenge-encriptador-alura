@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 /* Funciones de los botones */
 
 /* Listeners  de variables.js*/

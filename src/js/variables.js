@@ -9,6 +9,10 @@ class Variables{
         this.txtareaDesencriptado = document.getElementById('txtarea-desencriptado')
         this.adverencia = document.getElementById('txtarea-desencriptado-advertencia')
         this.txtareaEncriptado = document.getElementById('txtarea-encriptado')
+        this.textoOso = document.getElementById('svgOso')
+
+         // Ocultar el SVG al iniciar la página
+         this.hideOso()
     }
 
     LowerCase(){
@@ -29,6 +33,9 @@ class Variables{
     copiar(){
         this.btnCopiar.addEventListener('click', ()=>{
             const textoACopiar = this.txtareaEncriptado.value;
+            if (textoACopiar != ''){
+                this.showOsoTemporary()
+            }
             navigator.clipboard.writeText(textoACopiar).then(()=>{
             }).catch(error =>{
                 console.log(`Error al copiar el texto: ${error}`);
@@ -92,6 +99,30 @@ class Variables{
         this.txtareaEncriptado.addEventListener('input', (e) => {
             e.preventDefault();
         });
+    }
+
+
+    showOso() {
+        this.textoOso.classList.add('show');
+        setTimeout(() => {
+            this.textoOso.style.display = 'block';
+        }, 10);
+    }
+
+
+    hideOso() {
+        this.textoOso.classList.remove('show');
+        setTimeout(() => {
+            this.textoOso.style.display = 'none';
+        }, 2000); 
+    }
+
+    // Método para mostrar el oso temporalmente
+    showOsoTemporary() {
+        this.showOso();
+        setTimeout(() => {
+            this.hideOso();
+        }, 2000);
     }
 }
 
