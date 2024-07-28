@@ -80,6 +80,7 @@ textarea, input, h1, p , label, .btn , a {
     font-size: 16px;
     cursor: pointer;
     font-family: var(--font-krone);
+    z-index: 2;
 }
 
 /* Fin Header */
