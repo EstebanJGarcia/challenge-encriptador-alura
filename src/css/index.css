@@ -69,6 +69,7 @@ textarea, input, h1, p , label, .btn , a {
     padding: 0.5rem;
     border-radius: 1rem;
     border: 2px solid var(--btn-color);
+    z-index: 2;
 }
 
 .theme-selector label {
@@ -80,7 +81,6 @@ textarea, input, h1, p , label, .btn , a {
     font-size: 16px;
     cursor: pointer;
     font-family: var(--font-krone);
-    z-index: 2;
 }
 
 /* Fin Header */
