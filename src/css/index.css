@@ -69,7 +69,7 @@ textarea, input, h1, p , label, .btn , a {
     padding: 0.5rem;
     border-radius: 1rem;
     border: 2px solid var(--btn-color);
-    z-index: 2;
+    z-index: 9999;
 }
 
 .theme-selector label {
@@ -394,6 +394,7 @@ main {
     }
 
     .theme-selector {
+        z-index: 9999;
         position: fixed;
         align-items: center;
         justify-content: center;
