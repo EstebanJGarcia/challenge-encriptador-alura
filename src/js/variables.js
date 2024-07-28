@@ -47,13 +47,13 @@ class Variables{
             if ( this.verificar() ){
                 this.showAdverencia()
             }else{
-                challange.setTexto(this.txtareaDesencriptado.value)
-                this.txtareaEncriptado.value = challange.encriptar()
                 if (this.txtareaDesencriptado.value != ''){
+                    challange.setTexto(this.txtareaDesencriptado.value)
+                    this.txtareaEncriptado.value = challange.encriptar()
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-                this.txtareaDesencriptado.value = ''
-                this.hideAdverencia()
+                    this.txtareaDesencriptado.value = ''
+                    this.hideAdverencia()
+                } 
             }
         })
     }
@@ -63,14 +63,14 @@ class Variables{
             if ( this.verificar() ){
                 this.showAdverencia()
             }else{
-                challange.setTexto(this.txtareaDesencriptado.value)
-                let texto = challange.getTexto()
-                this.txtareaEncriptado.value = challange.desencriptarv2(texto)
                 if (this.txtareaDesencriptado.value != ''){
+                    challange.setTexto(this.txtareaDesencriptado.value);
+                    let texto = challange.getTexto();
+                    this.txtareaEncriptado.value = challange.desencriptarv2(texto);
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    this.txtareaDesencriptado.value = '';
+                    this.hideAdverencia();
                 }
-                this.txtareaDesencriptado.value = ''
-                this.hideAdverencia()
             }
         })
     }
