@@ -50,6 +50,7 @@ class Variables{
                 if (this.txtareaDesencriptado.value != ''){
                     challange.setTexto(this.txtareaDesencriptado.value)
                     this.txtareaEncriptado.value = challange.encriptar()
+                    this.btnCopiar.style.display = 'block'
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     this.txtareaDesencriptado.value = ''
                     this.hideAdverencia()
@@ -67,9 +68,11 @@ class Variables{
                     challange.setTexto(this.txtareaDesencriptado.value);
                     let texto = challange.getTexto();
                     this.txtareaEncriptado.value = challange.desencriptarv2(texto);
+                    this.btnCopiar.style.display = 'block'
                     this.btnCopiar.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     this.txtareaDesencriptado.value = '';
                     this.hideAdverencia();
+                    
                 }
             }
         })
@@ -103,6 +106,8 @@ class Variables{
         this.txtareaEncriptado.addEventListener('input', (e) => {
             e.preventDefault();
         });
+
+        this.btnCopiar.style.display = 'none'
     }
 
 
