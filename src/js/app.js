@@ -14,12 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Funciones de los botones */
 
 /* Listeners  de variables.js*/
-// convierte en minusculas cualquier input
+
+/* convierte en minusculas cualquier input
+verifica caracteres especiales y acentos*/
 variables.LowerCase()
 
-// hacer en solo lectura el text area de  encriptado
+
 variables.hideAdverencia()
-variables.readOnly()
+variables.readOnly() // hacer en solo lectura el text area de  encriptado
 variables.copiar()
 variables.desencriptar()
 variables.encriptar()

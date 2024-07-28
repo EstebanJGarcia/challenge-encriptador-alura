@@ -164,18 +164,18 @@ textarea {
     justify-content: space-between;
 }
 
-
+/* Placeholder del text Area */
 #txtarea-desencriptado::-webkit-input-placeholder{ 
-    color: var(--btn-color);
+    color: var(--btn-font-color);
 }
 #txtarea-desencriptado::-moz-placeholder{ 
-    color: var(--btn-color);
+    color: var(--btn-font-color);
 }
 #txtarea-desencriptado:-moz-placeholder {
-    color: var(--btn-color);
+    color: var(--btn-font-color);
 }
 #txtarea-desencriptado:-ms-input-placeholder {
-    color: var(--btn-color);
+    color: var(--btn-font-color);
 }
 
 
