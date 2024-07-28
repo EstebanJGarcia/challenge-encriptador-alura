@@ -162,7 +162,6 @@ textarea {
     gap: 2rem;
     justify-content: space-between;
 }
-
 /* Main Fin */
 
 /* footer */
@@ -335,8 +334,7 @@ main {
     }
 
     .theme-selector {
-        top: 0.5rem;
-        left: 0.5rem;
+        position: fixed;
         align-items: center;
         justify-content: center;
     }
