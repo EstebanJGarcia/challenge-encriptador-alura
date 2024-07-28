@@ -7,6 +7,7 @@ class Variables{
         this.btnEncriptar = document.getElementById('btn-desencriptar')
         this.btnCopiar = document.getElementById('btn-copiar')
         this.txtareaDesencriptado = document.getElementById('txtarea-desencriptado')
+        this.adverencia = document.getElementById('txtarea-desencriptado-advertencia')
         this.txtareaEncriptado = document.getElementById('txtarea-encriptado')
     }
 
@@ -16,6 +17,11 @@ class Variables{
             const textoLowerCase = texto.toLowerCase();
             if (texto !== textoLowerCase) {
                 this.txtareaDesencriptado.value = textoLowerCase;
+            }
+            if (regex.test(texto)){
+                this.showAdverencia()
+            }else{
+                this.hideAdverencia()
             }
         });
     }
@@ -34,10 +40,12 @@ class Variables{
         this.btnEncriptar.addEventListener('click', ()=>{
 
             if ( this.verificar() ){
-                console.log('hay tildes')
+                this.showAdverencia()
             }else{
                 challange.setTexto(this.txtareaDesencriptado.value)
                 this.txtareaEncriptado.value = challange.encriptar()
+                this.txtareaDesencriptado.value = ''
+                this.hideAdverencia()
             }
         })
     }
@@ -45,13 +53,23 @@ class Variables{
     desencriptar(){
         this.btnDesencriptar.addEventListener('click', ()=>{
             if ( this.verificar() ){
-                console.log('hay tildes')
+                this.showAdverencia()
             }else{
                 challange.setTexto(this.txtareaDesencriptado.value)
                 let texto = challange.getTexto()
                 this.txtareaEncriptado.value = challange.desencriptarv2(texto)
+                this.txtareaDesencriptado.value = ''
+                this.hideAdverencia()
             }
         })
+    }
+
+    showAdverencia() {
+        this.adverencia.style.display = 'block'; // Muestra el elemento
+    }
+
+    hideAdverencia() {
+        this.adverencia.style.display = 'none'; // Oculta el elemento
     }
 
     verificar(){

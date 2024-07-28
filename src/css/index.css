@@ -162,6 +162,22 @@ textarea {
     gap: 2rem;
     justify-content: space-between;
 }
+
+
+#txtarea-desencriptado::-webkit-input-placeholder{ 
+    color: var(--btn-color);
+}
+#txtarea-desencriptado::-moz-placeholder{ 
+    color: var(--btn-color);
+}
+#txtarea-desencriptado:-moz-placeholder {
+    color: var(--btn-color);
+}
+#txtarea-desencriptado:-ms-input-placeholder {
+    color: var(--btn-color);
+}
+
+
 /* Main Fin */
 
 /* footer */
