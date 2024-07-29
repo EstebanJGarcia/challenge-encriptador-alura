@@ -350,6 +350,10 @@ main {
         flex-direction: column;
     }
 
+    .oso-buscar{
+        height: 30rem;
+        box-sizing:content-box;
+    }
 }
 
 @media (max-width: 768px) {
@@ -372,6 +376,11 @@ main {
 
     .btn-encriptar, .btn-desencriptar, .btn {
         padding: 0.5rem 1.5rem;
+    }
+
+    .oso-buscar{
+        height: 30rem;
+        box-sizing:content-box;
     }
 }
 
