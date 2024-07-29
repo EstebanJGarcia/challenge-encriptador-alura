@@ -373,6 +373,13 @@ main {
     .btn-encriptar, .btn-desencriptar, .btn {
         padding: 0.5rem 1.5rem;
     }
+
+    .oso-buscar{
+        position: relative;
+        box-sizing:content-box;
+        height: 45vh;
+    }
+
 }
 
 @media (max-width: 445px) {
@@ -396,6 +403,13 @@ main {
     .btn-encriptar, .btn-desencriptar, .btn {
         padding: 0.5rem 1rem;
     }
+
+    .oso-buscar{
+        position: relative;
+        box-sizing:content-box;
+        height: 45vh;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -425,6 +439,11 @@ main {
         right: 0.5rem;
     }
 
+    .oso-buscar{
+        position: relative;
+        box-sizing:content-box;
+        height: 45vh;
+    }
 
 }
 
