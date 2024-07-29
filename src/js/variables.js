@@ -33,11 +33,11 @@ class Variables{
         this.btnCopiar.addEventListener('click', ()=>{
             const textoACopiar = this.txtareaEncriptado.value;
             if (textoACopiar !== '') {
+                this.btnCopiar.style.display = 'none'
                 this.showOsoTemporary()
                 setTimeout(() => {
                     this.showGrupoBuscar()
                 }, 1500);
-                this.btnCopiar.style.display = 'block'
             }
 
             this.txtareaEncriptado.value = ''
