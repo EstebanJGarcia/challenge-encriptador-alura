@@ -36,7 +36,8 @@ class Variables{
                 this.showOsoTemporary()
                 setTimeout(() => {
                     this.showGrupoBuscar()
-                }, 1500); 
+                }, 1500);
+                this.btnCopiar.style.display = 'block'
             }
 
             this.txtareaEncriptado.value = ''
