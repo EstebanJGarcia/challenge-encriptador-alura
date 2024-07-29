@@ -39,7 +39,6 @@ class Variables{
                     this.showGrupoBuscar()
                 }, 1500);
             }
-
             this.txtareaEncriptado.value = ''
             navigator.clipboard.writeText(textoACopiar).then(()=>{
             }).catch(error =>{
