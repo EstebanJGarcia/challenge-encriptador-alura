@@ -79,8 +79,6 @@ Puedes personalizar la animación Lottie y otros aspectos de la aplicación edit
 </div>
 
 
-
-
 ## Problemas Conocidos
 
 - En algunos dispositivos móviles, la funcionalidad de desplazamiento hasta el botón de copiar puede no funcionar correctamente.
