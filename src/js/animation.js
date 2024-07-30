@@ -57,8 +57,10 @@ class Animation {
                 // Añade la clase de transición
                 element.classList.add('transition-color');
                 // Cambia el color
-                element.style.fill = color;
-                element.style.stroke = color;
+                if (this.#id !== 'oso-desencriptado'){
+                    element.style.fill = color;
+                    element.style.stroke = color;
+                }
             });
         }
     }
