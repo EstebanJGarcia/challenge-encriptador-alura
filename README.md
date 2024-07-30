@@ -1,7 +1,9 @@
 # Challenge Encriptador - Alura Latam + ONE - Oracle Next Education G7 
-<div align="center">
-  <img src="./src/assets/images/Darkblue2.png" alt="Descripción de la imagen" width="800"/>
-</div>
+
+<a href="https://estebanjgarcia.github.io/challenge-encriptador-alura/">
+    <img src="./src/assets/images/Darkblue2.png" alt="Descripción de la imagen" width="800"/>
+</a>
+
 ## Encriptador de Texto
 
 Este proyecto es una aplicación web para encriptar y desencriptar textos. Utiliza animaciones Lottie y permite cambiar entre diferentes temas, incluido un modo oscuro.
