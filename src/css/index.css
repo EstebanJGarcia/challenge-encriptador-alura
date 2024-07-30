@@ -21,11 +21,7 @@ textarea, input, h1, p , label, .btn , a {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 3rem 5rem;
-}
-
-.main, footer {
-    padding: 3rem 5rem;
+    padding: 1rem 1rem;
 }
 
 .header__container {
@@ -39,12 +35,13 @@ textarea, input, h1, p , label, .btn , a {
 .row__header {
     display: flex;
     gap: 2rem;
-    padding-top: 3rem;
+    padding-top: 2.50rem;
     justify-content: center;
     align-items: center;
 }
 
 .header__titulo {
+    margin-top: 0px;
     text-align: center;
     font-size: 3.5rem;
 }
@@ -109,6 +106,10 @@ textarea, input, h1, p , label, .btn , a {
 /* Fin barra de desplazamiento */
 
 /* Main contenido */
+.main{
+    padding-bottom: 2rem;
+}
+
 .main__contenido {
     display: flex;
     justify-content: center;
