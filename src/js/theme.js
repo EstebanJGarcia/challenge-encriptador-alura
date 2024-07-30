@@ -1,4 +1,4 @@
-import { updateAnimationColor } from './utils.js'; // Asegúrate de importar la función
+import { animaciones } from './animation.js';
 
 export const themes = {
     darkBlue2: {
@@ -71,7 +71,6 @@ export const themes = {
         btnFont: '#ffffff',
         animationColor2: "#7B838A",
         animationColor: "#000000"
-
     }
 };
 
@@ -87,18 +86,33 @@ export function applyTheme(themeName) {
         document.documentElement.style.setProperty('--text-color', theme.textColor);
         document.documentElement.style.setProperty('--btn-color', theme.btnColor);
         document.documentElement.style.setProperty('--btn-font-color', theme.btnFont);
+        
+        // Actualiza el color de la animación usando las instancias de Animation
+        animaciones.forEach(animation => {
+            //animationLinkedIn
+            //animationGitHub
+            switch(animation.getID() != ''){
+                case animation.getID() ==='animationGitHub':
+                    if (theme.primary100 == '#000000'){
+                        animation.updateAnimationColor('#ffffff');
+                    }else{
+                        animation.updateAnimationColor(theme.animationColor);
+                    }
+                    break;
+                case animation.getID() ==='animationLinkedIn':
+                    if (theme.primary100 == '#000000'){
+                        animation.updateAnimationColor('#ffffff');
+                    }else{
+                        animation.updateAnimationColor(theme.animationColor);
+                    }
+                    break;
+                default:
+                    animation.updateAnimationColor(theme.animationColor);
+            }
 
-        
-        // Actualiza el color de la animación
-        updateAnimationColor(theme.animationColor, 'animationContainer');
-        if (theme.primary100 =='#000000'){
-            updateAnimationColor('#FFFFFF', 'animationGitHub');
-            updateAnimationColor(theme.animationColor2, 'oso-buscar');
-        }else{
-            updateAnimationColor(theme.animationColor, 'animationGitHub');
-            updateAnimationColor(theme.animationColor, 'animationLinkedIN');
-            updateAnimationColor(theme.animationColor, 'oso-buscar');
-        }
-        
+            if (animation.id === 'oso-buscar' && theme.primary100 === '#000000') {
+                animation.updateAnimationColor(theme.animationColor2);
+            }
+        });
     }
 }

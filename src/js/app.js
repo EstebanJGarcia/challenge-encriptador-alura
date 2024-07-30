@@ -1,6 +1,6 @@
 import { applyTheme } from './theme.js';
 import { variables } from './variables.js';
-
+import { animaciones } from './animation.js';
 
 /* Evento que cambia el tema */
 document.addEventListener('DOMContentLoaded', function() {
@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-/* Funciones de los botones */
+/* Carga las animaciones */
+animaciones.forEach(animacion =>{
+    animacion.loadAnimation();
+})
 
 /* Listeners  de variables.js*/
 
