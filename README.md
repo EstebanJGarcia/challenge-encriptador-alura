@@ -71,10 +71,10 @@ Puedes personalizar la animación Lottie y otros aspectos de la aplicación edit
   <div style="flex: 1;">
     <img src="./src/assets/images/darkblue.png" alt="DarkBlue" style="height: 400px;">
   </div>
-  <div style="flex: 1; display: flex; flex-direction: column; height: 400px;">
-    <img src="./src/assets/images/lightblue.png" alt="LightBlue" style="width: 266px; margin-right: 1px;">
-    <img src="./src/assets/images/grey.png" alt="Grey" style="width: 266px; margin-top: 10px; margin-right: 1px;">
-    <img src="./src/assets/images/darkmode.png" alt="DarkMode" style="width: 266px; margin-top: 10px;">
+  <div style="flex: 1; display: flex; flex-direction: column; height: 400px; margin-top: 10px;">
+    <img src="./src/assets/images/lightblue.png" alt="LightBlue" style="width: 266px;">
+    <img src="./src/assets/images/grey.png" alt="Grey" style="width: 266px;">
+    <img src="./src/assets/images/darkmode.png" alt="DarkMode" style="width: 266px;">
   </div>
 </div>
 
