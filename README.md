@@ -66,6 +66,20 @@ Puedes personalizar la animación Lottie y otros aspectos de la aplicación edit
 - **Animación Lottie**: Modifica el archivo `iconos.js` y ajusta su configuración en `animation.js`.
 - **Temas**: Ajusta los estilos en `theme.js` para personalizar los temas.
 
+
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+    <img src="./src/assets/images/darkblue.png" alt="DarkBlue" style="height: 400px;">
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; height: 400px;">
+    <img src="./src/assets/images/lightblue.png" alt="LightBlue" style="width: 200px">
+    <img src="./src/assets/images/grey.png" alt="Grey" style="width: 200px; margin-top: 10px;">
+    <img src="./src/assets/images/darkmode.png" alt="DarkMode" style="width: 200px; margin-top: 10px;">
+  </div>
+</div>
+
+
+
 ## Problemas Conocidos
 
 - En algunos dispositivos móviles, la funcionalidad de desplazamiento hasta el botón de copiar puede no funcionar correctamente.
@@ -90,7 +104,3 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 Para cualquier pregunta o sugerencia, puedes contactarme a través de mis redes[LinkedIn](https://www.linkedin.com/in/estebanjgarcia/).
 o escribiendo a mi correo estebanxshion@gmail.com
 """
-
-## Licencia
-
-[MIT](https://choosealicense.com/licenses/mit/)
