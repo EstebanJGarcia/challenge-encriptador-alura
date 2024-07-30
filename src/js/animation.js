@@ -41,6 +41,9 @@ class Animation {
             await new Promise(resolve => this.#animation.addEventListener('DOMLoaded', resolve));
 
             // Cambia el color inicial
+            if( this.getID() !== 'oso-desencriptado'){
+                this.updateAnimationColor(this.#color)
+            }
         } catch (error) {
             console.error('Error al cargar el archivo JSON:', error);
         }
@@ -56,8 +59,10 @@ class Animation {
                 // Añade la clase de transición
                 element.classList.add('transition-color');
                 // Cambia el color
-                    element.style.fill = color;
-                    element.style.stroke = color;
+                    if( this.getID() !== 'oso-desencriptado'){
+                        element.style.fill = color;
+                        element.style.stroke = color;
+                    }
             });
         }
     }

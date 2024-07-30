@@ -107,7 +107,7 @@ export function applyTheme(themeName) {
                     }
                     break;
                 default:
-                    if (animation.getID() !== 'oso-desencriptado'){
+                    if (animation.getID() != 'oso-desencriptado'){
                         animation.updateAnimationColor(theme.animationColor);
                     }
             }
