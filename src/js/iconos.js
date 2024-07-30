@@ -26,7 +26,7 @@ export const iconos = [
     {
         id: 'oso-desencriptado',
         nombre: 'oso.json',
-        color: 'white',
+        color: '',
         setSpeed: 0.5
     }
 ];
