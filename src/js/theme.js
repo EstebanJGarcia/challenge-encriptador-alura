@@ -107,7 +107,9 @@ export function applyTheme(themeName) {
                     }
                     break;
                 default:
-                    animation.updateAnimationColor(theme.animationColor);
+                    if (animation.getID() !== 'oso-desencriptado'){
+                        animation.updateAnimationColor(theme.animationColor);
+                    }
             }
 
             if (animation.id === 'oso-buscar' && theme.primary100 === '#000000') {
